@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DARK NIGHT VISION"
+        android:textStyle="bold"
+        android:textSize="43sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_rounded_edge"
+        android:text="SAFETY MEMBERS"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <ListView
+        android:id="@+id/listviewsafemembers"
+        android:layout_width="350dp"
+        android:layout_height="620dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/rounded_edged"
+        android:contextClickable="true"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        tools:listitem="@layout/activity_customlist"
+        android:listSelector="@drawable/blue_rounded_edge"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <!-- Heading TextView -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="DARK KNIGHT VISION"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="332dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/gradient"
+            android:orientation="vertical">
+
+            <!-- Profile Picture ImageView -->
+            <ImageView
+                android:id="@+id/id_profile_pic"
+                android:layout_width="186dp"
+                android:layout_height="187dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:onClick="selectProfilePicture"
+                android:src="@drawable/pfp" />
+
+            <TextView
+                android:id="@+id/id_username1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/username"
+                android:textColor="#fff"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="407dp"
+        android:layout_gravity="center"
+        android:background="@color/template1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="393dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginVertical="25dp"
+            android:background="@drawable/rounded_edged"
+            android:orientation="horizontal"
+            android:paddingStart="25dp"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/email" />
+
+            <TextView
+                android:id="@+id/id_email"
+                android:layout_width="250dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                android:autofillHints=""
+                android:hint="@string/email"
+                android:paddingStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edged"
+            android:orientation="horizontal"
+            android:paddingStart="25dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/username_logo"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <TextView
+                android:id="@+id/id_username"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:autofillHints=""
+                android:background="@color/white"
+                android:hint="@string/username"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="@color/blue1"
+            android:onClick="logout"
+            android:text="Logout"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,UsingOnClickInXml" />
+    </LinearLayout>
+</LinearLayout>
